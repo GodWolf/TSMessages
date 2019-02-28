@@ -538,7 +538,7 @@ canBeDismissedByUser:(BOOL)dismissingEnabled
             if (isNavBarIsHidden || isNavBarIsOpaque) {
                 topOffset = -30.f;
             }
-            backgroundFrame = UIEdgeInsetsInsetRect(backgroundFrame, UIEdgeInsetsMake(topOffset, 0.f, 0.f, 0.f));
+            backgroundFrame = UIEdgeInsetsInsetRect(backgroundFrame, UIEdgeInsetsMake(-CGRectGetHeight([UIApplication sharedApplication].statusBarFrame), 0.f, 0.f, 0.f));
         }
         else if (self.messagePosition == TSMessageNotificationPositionBottom)
         {
